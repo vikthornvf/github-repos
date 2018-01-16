@@ -34,6 +34,15 @@ body {
   }
 }
 
+.splash {
+	position: fixed;
+	width: 200px;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -125px;
+}
+
 .header-image {
 	background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
 	background-size: cover;
@@ -67,6 +76,10 @@ body {
 
 .mat-tab-link {
 	display: table-cell;
+}
+
+.clickable {
+	cursor: pointer;
 }
 
 .selectable:hover {
@@ -107,8 +120,25 @@ body {
 	float: right;
 }
 
+.logo {
+	color: rgba(255, 255, 255, 0.87);
+	text-decoration: none;
+}
+
 .mat-tab-body-content {
 	min-height: 250px;
+}
+
+mat-toolbar {
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	background: #00b8d4 !important;
+	background: -webkit-linear-gradient(left, #00b8d4 0%,#26c6da 100%) !important;
+	background:    -moz-linear-gradient(left, #00b8d4 0%, #26c6da 100%) !important;
+	background:         linear-gradient(to right, #00b8d4 0%,#26c6da 100%) !important;
+	-webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+	        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
 }
 
 mat-list {

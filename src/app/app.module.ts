@@ -20,6 +20,7 @@ import {
 } from '@angular/material';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
+import { ServiceWorkerModule } from '@angular/service-worker';
 import { RepositoriesService } from './services/repositories.service';
 import { FavoritesService } from './services/favorites.service';
 import { CacheInterceptor } from './services/cache.interceptor';
@@ -53,7 +54,8 @@ import { FavoritesComponent } from './components/favorites/favorites.component';
 		MatTooltipModule,
 		MatSnackBarModule,
 		MatProgressSpinnerModule,
-		InfiniteScrollModule
+		InfiniteScrollModule,
+		environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : []
 	],
 	providers: [
 		RepositoriesService,

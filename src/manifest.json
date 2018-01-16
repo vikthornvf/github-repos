@@ -1,12 +1,12 @@
 {
-	"name": "Github Top Trend Repositories",
 	"short_name": "Github Repos",
-	"lang": "pt_BR",
+	"name": "Github Top Trend Repositories",
 	"start_url": "/",
-	"background_color": "#26c6da",
 	"theme_color": "#00b8d4",
-	"orientation": "any",
+	"background_color": "#26c6da",
 	"display": "standalone",
+	"orientation": "any",
+	"lang": "pt_BR",
  "icons": [
   {
    "src": "android-icon-36x36.png",

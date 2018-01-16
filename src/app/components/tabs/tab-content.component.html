@@ -10,7 +10,7 @@
 				[ngClass]="{ active: repo.id === selectedRepo }"
 				(click)="select(repo.id)">
 			<h5 matLine>{{ repo.name }}</h5>
-			<mat-icon class="fav-icon" (click)="onFavorite(repo)">{{ repo.favorite ? 'favorite' : 'favorite_border' }}</mat-icon>
+			<mat-icon class="fav-icon clickable" (click)="onFavorite(repo)">{{ repo.favorite ? 'favorite' : 'favorite_border' }}</mat-icon>
 			<p matSubheader>{{ (repo.description.length > 150) ? (repo.description | slice:0:150)+'...' : (repo.description) }}</p>
 			<p matLine class="grey-text"><mat-icon class="small-icon">star</mat-icon>{{ repo.stargazers_count | number }}</p>
 		</mat-list>
@@ -22,6 +22,6 @@
 			Ops, limite de buscas no Github atingido!<br>
 			Tente novamente em alguns segundos.
 		</h5>
-		<button mat-raised-button color="primary" (click)="cleanError()">Buscar novamente</button>
+		<button mat-raised-button color="primary" style="margin-top: 20px" (click)="cleanError()">Buscar novamente</button>
 	</span>
 </div>

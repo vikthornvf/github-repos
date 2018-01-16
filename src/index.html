@@ -21,15 +21,24 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="./assets/img/icons/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./assets/img/icons/favicon-16x16.png">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<link rel="manifest" href="./assets/img/icons/manifest.json">
-	<meta name="msapplication-TileColor" content="#00b8b1">
+	<link rel="manifest" href="manifest.json">
+	<meta name="msapplication-TileColor" content="#00b8d4">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#00b8b1">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#00b8d4">
 
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 </head>
 <body>
-  <app-root></app-root>
+	<app-root>
+		<div class="splash" id="content">
+			<img src="/assets/img/icons/android-icon-192x192.png" width="256px" alt="Angular5 PWA logo">
+			<h1>Github Repos...</h1>
+		</div>
+	</app-root>
+	<noscript>
+		<p>Para utilizar a aplicação é necessário ter habilitar o JavaScript</p>
+	</noscript>
 </body>
 </html>
