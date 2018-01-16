@@ -6,7 +6,7 @@ import { MatSnackBar } from '@angular/material';
 
 @Component({
 	selector: 'app-tab-content',
-	templateUrl: '/tab-content.component.html'
+	templateUrl: './tab-content.component.html'
 })
 export class TabContentComponent implements OnInit {
 

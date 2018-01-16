@@ -3,7 +3,7 @@ import { Language } from '../../models/language.model';
 
 @Component({
 	selector: 'app-tabs',
-	templateUrl: '/tabs.component.html'
+	templateUrl: './tabs.component.html'
 })
 export class TabsComponent implements OnInit {
 

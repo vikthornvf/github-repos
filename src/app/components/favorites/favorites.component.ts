@@ -6,7 +6,7 @@ import { MatSnackBar } from '@angular/material';
 
 @Component({
 	selector: 'app-favorites',
-	templateUrl: '/favorites.component.html'
+	templateUrl: './favorites.component.html'
 })
 export class FavoritesComponent implements OnInit {
 
