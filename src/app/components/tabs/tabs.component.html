@@ -1,0 +1,10 @@
+<mat-tab-group
+		mat-stretch-tabs
+		[(selectedIndex)]="selectedIndex"
+		swipeTab>
+	<mat-tab
+			*ngFor="let language of languages; let i = index"
+			[label]="language">
+		<app-tab-content [language]="language" *ngIf="selectedIndex === i"></app-tab-content>
+	</mat-tab>
+</mat-tab-group>

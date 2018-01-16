@@ -1,0 +1,17 @@
+<div class="container">
+	<h5 style="padding-top: 25px">Repositórios Favoritos</h5>
+	<button mat-raised-button color="warn" (click)="cleanFavoritos()">Limpar Favoritos</button>
+	<span *ngFor="let repo of favorites | async">
+		<mat-list
+				class="selectable"
+				[ngClass]="{ active: repo.id === selectedRepo }"
+				(click)="select(repo.id)">
+			<h5 matLine>{{ repo.name }}</h5>
+			<mat-icon class="fav-icon">favorite</mat-icon>
+			<p matSubheader>{{ (repo.description.length > 150) ? (repo.description | slice:0:150)+'...' : (repo.description) }}</p>
+			<p matLine class="grey-text"><mat-icon class="small-icon">star</mat-icon>{{ repo.stargazers_count | number }}</p>
+		</mat-list>
+		<mat-divider></mat-divider>
+	</span>
+	<mat-spinner color="accent" *ngIf="!favorites"></mat-spinner>
+</div>
